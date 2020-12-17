@@ -1,0 +1,29 @@
+.info {
+  &__item {
+    margin-left: 7px;
+  }
+
+  &__def {
+    display: inline-block;
+    width: 100%;
+    max-width: 61px;
+
+    margin-right: 15px;
+
+    font-size: 17px;
+    line-height: 32px;
+
+    letter-spacing: 0.1em;
+
+    color: $darkFourthDC;
+  }
+
+  &__data {
+    font-size: 19px;
+    line-height: 36px;
+
+    letter-spacing: 0.1em;
+
+    color: $darkSecondaryFC;
+  }
+}

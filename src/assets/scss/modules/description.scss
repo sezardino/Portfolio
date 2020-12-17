@@ -1,0 +1,76 @@
+.description {
+  &__title {
+    display: none;
+  }
+  &__buttons {
+    margin-top: 35px;
+    width: 100%;
+  }
+
+  &__button {
+    margin-left: auto;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__technologies {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .description {
+    width: 100%;
+    max-width: 416px;
+    &__title {
+      display: block;
+      text-align: left;
+    }
+    &__buttons {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+    }
+
+    &__button {
+      margin: 0;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__technologies {
+      margin-top: 70px;
+    }
+  }
+}
+@media (min-width: $desktopWidth) {
+  .description {
+    padding-top: 70px;
+    max-width: 516px;
+    &__title {
+      display: block;
+      text-align: left;
+      padding-bottom: 0;
+    }
+    &__buttons {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    &__button {
+      margin: 0;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__technologies {
+      margin-top: 70px;
+    }
+  }
+}

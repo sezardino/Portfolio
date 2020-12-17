@@ -1,0 +1,32 @@
+.technologies {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 50%;
+    color: $darkThirdFC;
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      @include size(5px);
+      background-color: $darkMainBg;
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .technologies {
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+}

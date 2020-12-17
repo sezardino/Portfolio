@@ -1,0 +1,218 @@
+.title {
+  text-transform: uppercase;
+  color: $darkMainFC;
+  font-weight: 400;
+
+  &--name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 45px;
+    line-height: 47px;
+
+    letter-spacing: 0.02em;
+    display: block;
+  }
+
+  &--surname {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 33px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    display: block;
+  }
+
+  &--main {
+    padding-left: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left: 1px solid $darkThirdBg;
+
+    font-size: 40px;
+    line-height: 42px;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: $darkMainFC;
+  }
+
+  &--popup {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    color: $darkThirdFC;
+  }
+
+  &--technologies {
+    text-transform: none;
+    font-size: 20px;
+    line-height: 38px;
+
+    letter-spacing: 0.1em;
+
+    color: $darkThirdFC;
+  }
+
+  &--skills {
+    padding-left: 10px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: 25px;
+
+  letter-spacing: 0.1em;
+
+  color: $darkSecondaryFC;
+
+  &--about {
+    font-size: 18px;
+    line-height: 33px;
+
+    letter-spacing: 0.1em;
+
+    color: $darkSecondaryFC;
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .title {
+    &--name {
+      font-size: 80px;
+      line-height: 83px;
+    }
+
+    &--surname {
+      font-size: 70px;
+      line-height: 73px;
+    }
+
+    &--main {
+      padding: 0;
+      padding-right: 20px;
+      padding-bottom: 12px;
+      border-left: none;
+
+      font-size: 106px;
+      line-height: 109px;
+
+      text-align: right;
+
+      min-width: 315px;
+      .row {
+        display: block;
+      }
+    }
+
+    &--about {
+      // min-width: 315px;
+      font-size: 84px;
+      line-height: 90px;
+    }
+
+    &--skills {
+      font-size: 67px;
+      line-height: 70px;
+    }
+
+    &--portfolio {
+      font-size: 80px;
+      line-height: 83px;
+    }
+
+    &--contact {
+      max-width: 100%;
+      padding-right: 0;
+      font-size: 75px;
+      line-height: 80px;
+    }
+
+    &--popup {
+      padding-right: 0;
+      font-size: 50px;
+      line-height: 53px;
+
+      letter-spacing: 0.08em;
+
+      color: $darkThirdFC;
+    }
+    &--technologies {
+      font-size: 20px;
+      line-height: 25px;
+
+      color: $darkThirdFC;
+    }
+
+    &__letter {
+      transition: 1s all;
+      display: inline-block;
+      cursor: default;
+      &--scale {
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+
+  .text {
+    font-size: 22px;
+    line-height: 27px;
+
+    &--hero {
+      font-size: 18px;
+      line-height: 22px;
+
+    }
+
+    &--about {
+      padding-left: 65px;
+      max-width: 548px;
+      font-size: 17px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .title {
+    &--name {
+      font-size: 103px;
+      line-height: 108px;
+    }
+
+    &--surname {
+      font-size: 89px;
+      line-height: 93px;
+    }
+
+    &--main {
+      padding-right: 47px;
+    }
+
+    &--about {
+      font-size: 140px;
+      line-height: 147px;
+    }
+
+    &--popup {
+      padding-right: 0;
+      font-size: 60px;
+      font-size: 60px;
+      line-height: 63px;
+    }
+    &--technologies {
+      font-size: 25px;
+      line-height: 47px;
+    }
+
+    &--contact {
+      padding-right: 0;
+      font-size: 110px;
+      line-height: 116px;
+    }
+  }
+}

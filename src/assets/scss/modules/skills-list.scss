@@ -1,0 +1,44 @@
+.skills-list {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__skill {
+    font-size: 20px;
+    line-height: 38px;
+
+    letter-spacing: 0.1em;
+
+    color: $darkSecondaryFC;
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .skills-list {
+    width: 100%;
+    max-width: 590px;
+    padding-left: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+      width: 100%;
+      max-width: 45%;
+    }
+
+    &__skill {
+      font-size: 19px;
+      line-height: 36px;
+
+      letter-spacing: 0.1em;
+    }
+  }
+}
+@media (min-width: $desktopWidth) {
+  .skills-list {
+    padding-left: 65px;
+  }
+}

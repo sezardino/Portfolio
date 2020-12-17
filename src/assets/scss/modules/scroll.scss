@@ -1,0 +1,39 @@
+.scroll {
+  height: 100%;
+
+  &__track{
+    position: relative;
+    @include size(1px, 100%);
+
+  }
+  &__bar{
+    @include size(5px, 80px);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &--black {
+    .scroll {
+      &__track{
+        background-color: $darkScrollWork;
+
+      }
+      &__bar{
+        background-color: $darkScrollWork;
+      }
+    }
+  }
+  &--white {
+    .scroll {
+      &__track{
+        background-color: $darkScrollPortfolio;
+
+      }
+      &__bar{
+        @include size(7px, 173px);
+        background-color: $darkScrollPortfolio;
+      }
+    }
+  }
+}

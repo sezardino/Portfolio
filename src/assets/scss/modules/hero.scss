@@ -1,0 +1,80 @@
+.hero {
+  padding-top: 7px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 0;
+
+  &__img {
+    @include size(218px, 333px);
+  }
+
+  &__wrapper {
+    padding-top: 18px;
+    border-top: 6px solid $darkMainColor;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__text {
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .hero {
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    z-index: 0;
+
+    &:before {
+      background-color: $darkMainColor;
+      width: 3px;
+      height: 372px;
+    }
+
+    &__img {
+      @include size(400px, auto);
+      order: 2;
+      position: absolute;
+      right: -48px;
+      bottom: 0;
+    }
+
+    &__wrapper {
+      margin-top: 160px;
+      margin-left: 0;
+      padding-top: 43px;
+      padding-bottom: 60px;
+      padding-left: 40px;
+      border-top: none;
+      border-left: none;
+      text-align: left;
+      width: auto;
+    }
+
+    &__text {
+      margin-top: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .hero {
+    &__img {
+      @include size(430px, auto);
+      order: 2;
+      position: absolute;
+      right: 60px;
+      bottom: 0;
+    }
+  }
+}

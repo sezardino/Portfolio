@@ -1,0 +1,33 @@
+.footer {
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+@media (min-width: $tableWidth) {
+  .footer {
+    max-width: 480px;
+
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-82%);
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .footer {
+    max-width: 555px;
+
+    bottom: 109px;
+    left: 50%;
+    transform: translateX(-105%);
+  }
+}

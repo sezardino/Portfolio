@@ -1,0 +1,14 @@
+.dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 70px;
+  &__item {
+    @include size(6px);
+    background-color:$darkDotsSecondBg;
+    &--active {
+      background-color:$darkDotsBg;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.about {
+  padding-top: 84px;
+  padding-bottom: 113px;
+
+  &__text {
+    margin-top: 28px;
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .about {
+    padding-top: 210px;
+    padding-bottom: 113px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__title {
+      order: 1;
+    }
+    &__text {
+      margin-top: 0;
+      order: -1;
+    }
+  }
+}

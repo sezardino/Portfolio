@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  padding-top: 23px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  &__wrapper {
+  }
+
+  &__menu {}
+
+  &__nav {}
+
+  &__languages {}
+}
+
+@media(min-width: $tableWidth) {
+  .header {
+  padding-top: 0;
+  padding: 40px 0;
+
+    &__button {
+      display: none;
+    }
+
+    &__wrapper {
+    }
+
+    &__menu {
+    }
+
+    &__nav {}
+
+    &__languages {}
+  }
+}

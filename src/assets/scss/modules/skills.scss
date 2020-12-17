@@ -1,0 +1,23 @@
+.skills {
+  padding-top: 84px;
+  padding-bottom: 100px;
+
+  &__skills-list {
+    margin-top: 28px;
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .skills {
+    padding-top: 210px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__skills-list {
+      order: -1;
+      margin-top: 0;
+    }
+  }
+}

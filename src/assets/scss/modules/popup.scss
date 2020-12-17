@@ -1,0 +1,81 @@
+.popup {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__button {
+    position: absolute;
+    top: 26px;
+    right: 12px;
+  }
+  &__wrapper {
+    padding: 20px 20px 63px 20px;
+    background-color: white;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    margin-top: 54px;
+  }
+
+  &__view {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .popup {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 40px;
+    height: 100vh;
+    z-index: 2;
+
+    &__button {
+      top: 35px;
+      right: 35px;
+    }
+
+    &__wrapper {
+      padding: 100px 60px 100px 20px;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__title {
+      display: none;
+    }
+
+    &__view {
+      margin-top: 0;
+      margin-right: 20px;
+    }
+  }
+}
+@media (min-width: $desktopWidth) {
+  .popup {
+    min-width: 1140px;
+    width: 85%;
+    margin: auto;
+    &:before {
+      content: none;
+    }
+    &:after {
+      content: none;
+    }
+    &__wrapper {
+      padding: 100px 80px 100px 30px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__description {
+
+    }
+    &__view{
+      width: 50%;
+    }
+  }
+}

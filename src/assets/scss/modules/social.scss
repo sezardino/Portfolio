@@ -1,0 +1,43 @@
+.social {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin-right: 64px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 10px;
+    font-size: 30px;
+    line-height: 57px;
+
+    color: $darkSecondaryFC;
+  }
+}
+
+@media (min-width: $tableWidth) {
+  .social {
+    flex-direction: column;
+    &__item {
+      margin-right: 0;
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__link {
+      font-size: 30px;
+      line-height: 57px;
+
+      color: $darkSecondaryFC;
+      transition: 0.5s all;
+
+      &:hover {
+        font-size: 50px;
+      }
+    }
+  }
+}
