@@ -1,6 +1,13 @@
 .popup {
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
+  min-height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   &__button {
     position: absolute;
